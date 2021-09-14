@@ -35,9 +35,10 @@ const Price = styled.span`
 
 const FilterContainer = styled.div``
 const Filter = styled.div``
-const FilterTitle = styled.h1``
+const FilterTitle = styled.span``
 const FilterColor = styled.div``
-const FilterSizeOption = styled.div``
+const FilterSize = styled.select``
+const FilterSizeOption = styled.option``
 
 const Jeans = "https://img.ltwebstatic.com/images3_pi/2020/08/31/1598838475ee137bfdeb7e537ca0e09edac7f36114_thumbnail_600x.webp"
 
@@ -65,11 +66,13 @@ const Product = () => {
             </Filter>
             <Filter>
               <FilterTitle>Size</FilterTitle>
-              <FilterSizeOption>XS</FilterSizeOption>
-              <FilterSizeOption>S</FilterSizeOption>
-              <FilterSizeOption>M</FilterSizeOption>
-              <FilterSizeOption>L</FilterSizeOption>
-              <FilterSizeOption>XL</FilterSizeOption>
+              <FilterSize>
+                <FilterSizeOption>XS</FilterSizeOption>
+                <FilterSizeOption>S</FilterSizeOption>
+                <FilterSizeOption>M</FilterSizeOption>
+                <FilterSizeOption>L</FilterSizeOption>
+                <FilterSizeOption>XL</FilterSizeOption>
+              </FilterSize>
             </Filter>
           </FilterContainer>
         </InfoContainer>
